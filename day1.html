@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon League</title>
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Menu Bar -->
+    <nav class="MenuBar">
+        <div class="logo">
+        <a href="index.php"><img src="image/icon.png" alt="Icon" class="logo-icon">OneManShow </a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="services.php">Services</a></li>
+            <li><a href="portfolio.php">Portfolio</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+    </nav>
+
+    <!-- Judul -->
+    <section>
+      <h1>
+        <div>
+          <span>DETAIL PERTANDINGAN</span>
+          <span></span>
+        </div>
+      </h1>
+    </section>
+
+    <div class="cont-select-rank">
+     <select id="pageSelector" onchange="redirectToPage()">
+        <option value="">PILIH HARI</option>
+        <option value="day1.html">MATCH DAY 1</option>
+        <option value="day2.html">MATCH DAY 2</option>
+        <option value="day3.html">MATCH DAY 3</option>
+        <option value="day4.html">MATCH DAY 4</option>
+        <option value="day5.html">MATCH DAY 5</option>
+        <option value="day6.html">MATCH DAY 6</option>
+        <option value="day7.html">MATCH DAY 7</option>
+        <option value="day8.html">MATCH DAY 8</option>
+        <option value="day9.html">MATCH DAY 9</option>
+    </select>
+    </div>
+
+    <div class="cont-table-rank", id="output">
+    <table>
+    <tr>
+        <th>2</th>
+        <th>HISTORI</th>
+        <th>VS</th>
+        <th>ALMOND</th>
+        <th>2</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>PIKACHU - PIDGEOT</td>
+        <td>ROUND 1</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>GYARADOS - GRENINJA</td>
+        <td>ROUND 2</td>
+        <td>GYARADOS - STARMIE</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>CELEBIE - EXEGUTOR</td>
+        <td>ROUND 3</td>
+        <td>CHARIZARD - MOLTRES</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>MEWTOO - GARDEVOIR</td>
+        <td>ROUND 4</td>
+        <td>MEWTWO - MEW</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th>V</th>
+        <th>VS</th>
+        <th>JO</th>
+        <th>0</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>ROUND 1</td>
+        <td>MEWTWO - GARDEVOIR</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>GYARADOS - VAPOREON</td>
+        <td>ROUND 2</td>
+        <td>GYARADOS - VAPOREON</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>NINETALES - RAPIDASH</td>
+        <td>ROUND 3</td>
+        <td>CELEBIE - SERPERIOR</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>NOFAL</th>
+        <th>VS</th>
+        <th>POCKET</th>
+        <th>2</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>PIDGEOTTO - KANGHAZTAN</td>
+        <td>ROUND 1</td>
+        <td>GYARADOS - VAPOREON</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>NINETALES - RAPIDASH</td>
+        <td>ROUND 2</td>
+        <td>MWETWO - MEW</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>KINGLER - STARMI</td>
+        <td>ROUND 3</td>
+        <td>AERODACTYL - MONKEY</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>MAROWAK - MANKEY</td>
+        <td>ROUND 4</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>LEOCUN</th>
+        <th>VS</th>
+        <th>VHENTIL</th>
+        <th>2</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>MEWTWO - GARDEVOIR</td>
+        <td>ROUND 1</td>
+        <td>CELEBIE - SERPERIOR</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>ROUND 2</td>
+        <td>MEWTWO - RALTS</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>HITMONLEE - FARFETCH</td>
+        <td>ROUND 3</td>
+        <td>GOLEM - HITMONLEE</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>CELEBIE - SERPERIOR</td>
+        <td>ROUND 4</td>
+        <td>STARMIE - ARTICUNO</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th>ICARUSZ</th>
+        <th>VS</th>
+        <th>CHRONZ</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>MEWTWO - GARDEVOIR</td>
+        <td>ROUND 1</td>
+        <td>AERODACTYL - MARSHADWO</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>PIKACHU</td>
+        <td>ROUND 2</td>
+        <td>CELEBIE - SERPERIOR</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>GOLEM - MARSHADOW</td>
+        <td>ROUND 3</td>
+        <td>GYARADOS - GRENINJA</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>GYARADOS</td>
+        <td>ROUND 4</td>
+        <td>CHARIZARD - ARCANINE</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>KHONTOL</th>
+        <th>VS</th>
+        <th>LCIOUS</th>
+        <th>2</th>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>CHARIZARD - GROWTHLITE</td>
+        <td>ROUND 1</td>
+        <td>CHARIZARD - MEW</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>CELEBIE - SERPERIOR</td>
+        <td>ROUND 2</td>
+        <td>CELEBIE - SERPERIOR</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>MACHAMP - MARSHADOW</td>
+        <td>ROUND 3</td>
+        <td>AERODACTYL - MARSHADWO</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>ROUND 4</td>
+        <td>PIDGEY - BLITZLE</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th>RGC</th>
+        <th>VS</th>
+        <th>UCII</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>ROUND 1</td>
+        <td>MEWTWO - GARDEVOIR</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>GOLEM - MARSHADOW</td>
+        <td>ROUND 2</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>MEWTWO - GARDEVOIR</td>
+        <td>ROUND 3</td>
+        <td>CELEBIE - SERPERIOR</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>ULTIMA</th>
+        <th>VS</th>
+        <th>WAFA ANSHARY</th>
+        <th>2</th>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>MOLTRES - CHARIZARD</td>
+        <td>ROUND 1</td>
+        <td>MEWTWO - MEW</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>GYARADOS - STARMIE</td>
+        <td>ROUND 2</td>
+        <td>PIKACHU - RAICHU</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>MEWTWO - MEW</td>
+        <td>ROUND 3</td>
+        <td>AERODACTYL - HITMONLEE</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>CELEBI - EXXEGUTOR</td>
+        <td>ROUND 4</td>
+        <td>CELEBIE - EXXEGUTOR</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th>ALICE</th>
+        <th>VS</th>
+        <th>7.</th>
+        <th>0</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>CELEBIE - EXEGUTOR</td>
+        <td>ROUND 1</td>
+        <td>GRENINJA - HITMONLEE</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>GYARADOS - GRENINJA</td>
+        <td>ROUND 2</td>
+        <td>CELEBIE -EXXEGUTOR</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>MEWTWO - MEW</td>
+        <td>ROUND 3</td>
+        <td>MOLTRES - ARCANINE</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>ユタ</th>
+        <th>VS</th>
+        <th>BLACKMUMBA ID</th>
+        <th>2</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>WIGGLYPUFF - ARBOK</td>
+        <td>ROUND 1</td>
+        <td>PIKACHU</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>PIKACHU - ZEBRA</td>
+        <td>ROUND 2</td>
+        <td>MEWTWO - GARDEVOIR</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>GYARADOS</td>
+        <td>ROUND 3</td>
+        <td>ARTICUNO</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>MAROWAK - HITMONLEE</td>
+        <td>ROUND 4</td>
+        <td>SHINOTIC - VILEPLUM</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <th>0</th>
+        <th>BROSS</th>
+        <th>VS</th>
+        <th>DELUVROSES</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>WO</td>
+        <td>ROUND 1</td>
+        <td>WO</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>WO</td>
+        <td>ROUND 2</td>
+        <td>WO</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>WO</td>
+        <td>ROUND 3</td>
+        <td>WO</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>カンコ </th>
+        <th>VS</th>
+        <th>ESPADAS</th>
+        <th>2</th>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>CHATOT - GYARADOS</td>
+        <td>ROUND 1</td>
+        <td>ARCANINE - CHARIZARD</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>ROUND 2</td>
+        <td>MEWTWO - MEW</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>MACHAMP - DUGTRIO</td>
+        <td>ROUND 3</td>
+        <td>GYARADOS - DRUDIGON</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>NINETALES - RAPIDASH</td>
+        <td>ROUND 4</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>TOSHIYUKI</th>
+        <th>VS</th>
+        <th>V&lt;3D</th>
+        <th>2</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>EXXEGUTOR</td>
+        <td>ROUND 1</td>
+        <td>PIKACHU - RAICHU</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>ROUND 2</td>
+        <td>MEWTWO - MEW</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>MEWTWO</td>
+        <td>ROUND 3</td>
+        <td>GOLEM</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>GOLEM</td>
+        <td>ROUND 4</td>
+        <td>ARCANINE - MOLTRESS</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th>DASH</th>
+        <th>VS</th>
+        <th>IDEAVOLUTION</th>
+        <th>0</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>CHARIZARD - MOLTRESS</td>
+        <td>ROUND 1</td>
+        <td>MEWTWO - GARDEVOIR</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>MEWTOW - GARDEVOIR</td>
+        <td>ROUND 2</td>
+        <td>SERPERIOR - MEWTH</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>GYARADOS - GRENINJA</td>
+        <td>ROUND 3</td>
+        <td>CHARIZARD - MOLTRES</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th>NEMOO</th>
+        <th>VS</th>
+        <th>KUYANG</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>WEEZING - VENIPEDE</td>
+        <td>ROUND 1</td>
+        <td>CHARIZARD - MOLTRES</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>ROUND 2</td>
+        <td>CELEBY - EXXEGUTOR</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>MEWTOW - MEW</td>
+        <td>ROUND 3</td>
+        <td>GYARADOS - FROSMOTH</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>GYARADOS - ARTICUNO</td>
+        <td>ROUND 4</td>
+        <td>ZAPDOS - ZEBTRIKA</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th>ASH</th>
+        <th>VS</th>
+        <th>MINERVA</th>
+        <th>0</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>MEWTWO - GARDEVOIR</td>
+        <td>ROUND 1</td>
+        <td>ZAPDOS - VOLTROB</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>CELEBIE -SERPERIOR</td>
+        <td>ROUND 2</td>
+        <td>DRUDIGON - GYARADOS</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>GYARADOS - DRUDIGON</td>
+        <td>ROUND 3</td>
+        <td>MEWTWO - GARDEVOIR</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th>SMOKER</th>
+        <th>VS</th>
+        <th>リザードンの44</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>MEWTWO - MEW</td>
+        <td>ROUND 1</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>GYARADOS - ARTICUNO</td>
+        <td>ROUND 2</td>
+        <td>MEWTWO - MEW</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>CELEBI - SERPERIOR</td>
+        <td>ROUND 3</td>
+        <td>GYARADOS- GRENINJA</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>CHARIZARD - MOLTRESS</td>
+        <td>ROUND 4</td>
+        <td>WEEZING - SCOLIPEDE</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>NEIICHIRO</th>
+        <th>VS</th>
+        <th>PISH</th>
+        <th>2</th>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>AERODACTYL</td>
+        <td>ROUND 1</td>
+        <td>CELEBI</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>PIKACHU</td>
+        <td>ROUND 2</td>
+        <td>GYARADOS</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>CHARIZARD</td>
+        <td>ROUND 3</td>
+        <td>PIKACHU</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>GYARADOS</td>
+        <td>ROUND 4</td>
+        <td>MEWTWO</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th>TT_ANDREAZTCGP</th>
+        <th>VS</th>
+        <th>NOMAKEUP</th>
+        <th>2</th>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>PIKACHU - ZEBRA</td>
+        <td>ROUND 1</td>
+        <td>CELEBY - EXXEGUTOR</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>BLAINE</td>
+        <td>ROUND 2</td>
+        <td>GYARADOS</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>STARMIE - GRENINJA</td>
+        <td>ROUND 3</td>
+        <td>MEWTWO</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>WIN</td>
+        <td>MEWTWO</td>
+        <td>ROUND 4</td>
+        <td>CHARIZARD</td>
+        <td>LOSE</td>
+    </tr>
+    <tr>
+        <th>0</th>
+        <th>AZURELEAA</th>
+        <th>VS</th>
+        <th>PEYEUM</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>DARKENSS - TAUROS</td>
+        <td>ROUND 1</td>
+        <td>GYARADOS - GRENINJA</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>PIKACHU</td>
+        <td>ROUND 2</td>
+        <td>MWETWO - GARDEVOIR</td>
+        <td>WIN</td>
+    </tr>
+    <tr>
+        <td>LOSE</td>
+        <td>GYARADOS - GRENINJA</td>
+        <td>ROUND 3</td>
+        <td>PIKACHU - ZAPDOS</td>
+        <td>WIN</td>
+    </tr>
+</table>
+    </div>
+
+    <section>
+      <h2>
+        <div class="cont-kembali">
+          <span>Kembali</span>
+        </div>
+      </h2>
+    </section>
+
+    <!-- Footer Menu -->
+    <footer class="footer-menu">
+        <a href="#">One Man Show</a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

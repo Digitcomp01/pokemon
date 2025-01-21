@@ -15,6 +15,13 @@ document.querySelector('.cont-klasemen').addEventListener('click', function() {
     window.location.href = 'indexa.html';
 });
 
+function redirectToPage() {
+            var selectedPage = document.getElementById("pageSelector").value;
+            if (selectedPage) {
+                window.location.href = selectedPage; // Pindah halaman sesuai pilihan
+            }
+        }
+
 function updateKlasemen() {
     const output = document.getElementById('output');
     const selectedValue = document.getElementById('options').value;
